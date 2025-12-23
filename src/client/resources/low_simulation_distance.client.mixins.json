@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.tuxebro.low_simulation_distance.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "mixins": [
+    "DistanceMixin",
+    "SodiumDistanceMixin"
+  ]
+}

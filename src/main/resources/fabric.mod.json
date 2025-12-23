@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "low_simulation_distance",
+  "version": "${version}",
+
+  "name": "Low Simulation Distance",
+  "description": "Sets minimum simulation and render distance into 1 (not recommended for normal gameplay!)",
+  "authors": [],
+  "contact": {},
+
+  "license": "MIT",
+  "icon": "assets/low_simulation_distance/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": ["dev.tuxebro.low_simulation_distance.client.LowSimulationDistanceClient"],
+    "main": ["dev.tuxebro.low_simulation_distance.LowSimulationDistance"]
+  },
+
+  "mixins": [
+    "low_simulation_distance.mixins.json",
+    {
+      "config": "low_simulation_distance.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
