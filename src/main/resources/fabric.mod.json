@@ -11,10 +11,9 @@
   "license": "MIT",
   "icon": "assets/low_simulation_distance/icon.png",
 
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
-    "client": ["dev.tuxebro.low_simulation_distance.client.LowSimulationDistanceClient"],
-    "main": ["dev.tuxebro.low_simulation_distance.LowSimulationDistance"]
+    "client": ["dev.tuxebro.low_simulation_distance.client.LowSimulationDistanceClient"]
   },
 
   "mixins": [
